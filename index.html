@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discover North Carolina</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <span class="logo"><a href="index.html">Discover North Carolina</a></span>
+                <ul id="navLinks">
+                    <li><a href="index.html" id="current">Home</a></li>
+                    <li><a href="raleigh.html">Raleigh</a></li>
+                    <li><a href="charlotte.html">Charlotte</a></li>
+                    <li><a href="greensboro.html">Greensboro</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="menuIcon" onclick="toggleNav()"><img src="./images/menu-icon.svg" alt="Menu Icon"></button>
+            </nav>
+
+            <h1>North Carolina</h1>
+        </header>
+
+        <section id="main">
+            <article>
+                <h2>About North Carolina</h2>
+                <p>North Carolina is a state located in the southeastern region of the United States of America. North Carolina has a diverse geography that includes mountains and beaches. The state has a population of <a href="https://www.census.gov/quickfacts/fact/table/NC/PST045223">over ten million</a>. The three counties in North Carolina with the highest population according to the <a href="https://www.osbm.nc.gov/facts-figures/population-demographics/state-demographer/county-population-estimates/certified-county-population-estimates" target="_blank">2020 U.S. Census</a> are:</p>
+                <ol>
+                    <li>Wake County</li>
+                    <li>Mecklenburg County</li>
+                    <li>Guilford County</li>
+                </ol>
+                <p>The following table shows the three cities in North Carolina with the highest population.</p>
+                <table>
+                    <caption>North Carolina cities with the highest population, according to the <a href="https://www.census.gov/quickfacts/fact/table/charlottecitynorthcarolina,raleighcitynorthcarolina,greensborocitynorthcarolina,durhamcitynorthcarolina,winstonsalemcitynorthcarolina,fayettevillecitynorthcarolina/PST045222" target="_blank">2020 U.S. Census</a></caption>
+                    <thead>
+                        <th>City</th>
+                        <th>Population</th>
+                        <th>County</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Charlotte</td>
+                            <td>874,579</td>
+                            <td>Mecklenburg</td>
+                        </tr>
+                        <tr>
+                            <td>Raleigh</td>
+                            <td>467,665</td>
+                            <td>Wake</td>
+                        </tr>
+                        <tr>
+                            <td>Greensboro</td>
+                            <td>299,035</td>
+                            <td>Guilford</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <aside>
+                <h3>Quick Facts</h3>
+                <ul>
+                    <li><span class="quickFact">State Capital:</span> Raleigh</li>
+                    <li><span class="quickFact">State Nickname:</span> The Tar Heel State</li>
+                    <li><span class="quickFact">State Flower:</span> Flowering Dogwood</li>
+                    <li><span class="quickFact">State Bird:</span> Red Cardinal</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="city_section">
+            <h2>Popular Cities</h2>
+            <div>
+                <article>
+                    <img src="./images/raleigh_hero.jpg" alt="Picture of the North Carolina State Capitol">
+                    <h3>Raleigh</h3>
+                    <p>North Carolina's capital city, Raleigh, is home to historical monuments, universities, and much more.</p>
+                    <a href="raleigh.html">Discover Raleigh</a>
+                </article>
+                <article>
+                    <img src="./images/charlotte_hero.jpg" alt="Picture of buildings in Charlotte">
+                    <h3>Charlotte</h3>
+                    <p>Charlotte, North Carolina's most populous city, is home to the NASCAR Hall of Fame, several professional sports teams, and much more.</p>
+                    <a href="charlotte.html">Discover Charlotte</a>
+                </article>
+                <article>
+                    <img src="./images/greensboro_hero.jpg" alt="Picture of buildings in Greensboro">
+                    <h3>Greensboro</h3>
+                    <p>Greensboro is home to several museums, science centers, and much more.</p>
+                    <a href="greensboro.html">Discover Greensboro</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="" id="contactForm">
+                <input type="text" name="firstNameInput" id="firstNameInput" placeholder="First Name" required>
+                <input type="text" name="lastNameInput" id="lastNameInput" placeholder="Last Name" required>
+                <input type="email" name="eamilInput" id="eamilInput" placeholder="Email" required>
+                <input type="email" name="confirmEmailInput" id="confirmEmailInput" placeholder="Confirm Email" required>
+                <p id="warning">The email fields must match</p>
+                <textarea name="messageInput" id="messageInput" cols="30" rows="10" placeholder="Ask a question" required></textarea>
+                <button type="submit" >Submit</button>
+            </form>
+        </section>
+
+        <footer>
+            <span class="logo"><a href="index.html">Discover North Carolina</a></span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="raleigh.html">Raleigh</a></li>
+                <li><a href="charlotte.html">Charlotte</a></li>
+                <li><a href="greensboro.html">Greensboro</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div>
+                <span id="unsplash_credit">Photos provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a> unless otherwise specified</span>
+                <span>Copyright 2024</span>
+            </div>
+        </footer>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>

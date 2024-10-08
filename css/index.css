@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #F5F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* TEXT STYLES */
+h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+}
+h2 {
+    color: #002368ff;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+h3 {
+    color: #002368ff;
+    font-size: 1.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 2;
+    max-width: 800px;
+    margin: auto;
+}
+a {
+    word-wrap: break-word;
+}
+
+/* HEADER STYLES */
+header {
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/homepage_hero.jpg) center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO STYLES */
+.logo a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #c0032cff;
+    text-decoration: none;
+}
+
+/* NAV STYLES */
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: left;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+header nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+header nav ul li a {
+    font-size: 1.05rem;
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+}
+header nav ul li a:hover {
+    font-weight: bold;
+    color: #002368ff;
+    border-bottom: 3px solid #002368ff;
+}
+header nav ul li a#current {
+    font-weight: bold;
+    color: #002368ff;
+    border-bottom: 3px solid #002368ff;
+}
+header nav #menuIcon {
+    display: none;
+}
+
+/* MAIN SECTION STYLES */
+#main {
+    padding: 10px 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    gap: 30px;
+}
+#main article {
+    grid-column: 2;
+}
+#main ol {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 2;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0;
+    display: inline-block;
+}
+
+/* TABLE STYLES */
+table {
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    word-wrap: break-word;
+}
+
+/* ASIDE STYLES */
+aside {
+    grid-column: 3;
+    grid-row: 1/-1;
+    justify-self: center;
+    align-self: center;
+    background-color: rgb(247, 247, 247);
+    border: 3px solid #002368ff;
+    padding: 10px;
+}
+aside h3 {
+    font-size: 1.3rem;
+}
+aside ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    font-size: 0.9rem;
+}
+aside ul li {
+    margin-bottom: 20px;
+}
+aside ul li .quickFact {
+    font-weight: bold;
+}
+
+/* CITY SECTION STYLES */
+#city_section {
+    padding: 40px;
+}
+#city_section div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+#city_section article {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: #ebebeb;
+    border-radius: 16px;
+}
+#city_section article img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+#city_section article p {
+    padding: 10px;
+}
+#city_section article a {
+    display: block;
+    padding: 10px;
+    border-radius: 0 0 16px 16px;
+    color: white;
+    background-color: #1D4ED8;
+    text-decoration: none;
+}
+
+/* FORM STYLES */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px solid #002368ff;
+    border-radius: 4px;
+}
+form #warning {
+    color: red;
+    visibility: hidden;
+    margin: 0;
+}
+form textarea {
+    margin-bottom: 0;
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #1D4ED8;
+    color: white;
+    background-color: #1D4ED8;
+    cursor: pointer;
+}
+
+/* FOOTER STYLES */
+footer {
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+    background-color: #242424;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+footer ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover {
+    font-weight: bold;
+    border-bottom: 3px solid white;
+}
+footer div {
+    max-width: 200px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+}
+footer div span {
+    font-size: 0.8rem;
+    display: block;
+    padding: 5px;
+}
+footer div span a {
+    color: rgb(77, 255, 255);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) {
+    #main {
+        grid-template-columns: 100%;
+    }
+    #main article {
+        grid-column: 1;
+    }
+    #main article p {
+        padding: 10px;
+    }
+    aside {
+        grid-column: 1;
+        width: 100%;
+    }
+    aside ul {
+        display: inline-block;
+        font-size: 1rem;
+    }
+
+    footer div {
+        position: static;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav #menuIcon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    header nav #menuIcon img {
+        width: 24px;
+    }
+    header nav ul {
+        float: none;
+        display: none;
+        text-align: center;
+    }
+    header nav ul.open {
+        display: block;
+    }
+    header nav ul li {
+        display: block;
+        margin: 20px 0; 
+    }
+    header nav ul li a {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+    th, td {
+        padding: 4px;
+        font-size: 1rem;
+    }
+
+    footer ul {
+        margin: 20px 0;
+    }
+    footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
